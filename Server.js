@@ -2,14 +2,15 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const multer = require("multer");
-const dotenv=require("dotenv")
+const dotenv=require("dotenv");
+const path=require("node:path");
 dotenv.config();
 
 
 
 let app = express();
 app.use(cors());
-
+app.use(express.static(path.join(__dirname,"./client/build")));
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'upload')

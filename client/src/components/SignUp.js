@@ -9,7 +9,7 @@ function SignUp() {
 
   let getDataFromServerThruAxios = async () => {
 
-    axios.defaults.baseURL = 'http://localhost:9090';
+    axios.defaults.baseURL = '';
     let dataToSend = new FormData();
     dataToSend.append("name", nameInputRef.current.value);
     dataToSend.append("email", emailInputRef.current.value);
