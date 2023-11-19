@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  
+}
+form{
+  display: inline-block;
+  background-color: cornsilk;
+  padding: 20px;
+  border-radius: 20px;
+ 
+}
+form label{
+  display: inline-block;
+  width: 100px;
+}
+form div{
+  margin: 15px;
+}
+
+.image{
+  height: 200px;
+  width: 200px;
+  border: 1px solid gray;
+}
+body{
+  background-color: burlywood;
+}
+video{
+  object-fit: cover;
+  border:2px solid black;
+  border-radius: 100px;
+
+}
+.videos{
+  
+width: 800px;
+position: relative;
+bottom:300px;
+left: 600px;
+height: 300px;
+}
